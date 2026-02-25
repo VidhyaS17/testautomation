@@ -7,7 +7,7 @@ ${BROWSER}    chrome
 
 *** Test Cases ***
 Valid Login Test
-    Open Browser    ${URL}    ${BROWSER}
+    Open Browser    ${URL}    chrome    options=add_argument(--headless)
     Input Text    id=username    admin
     Input Text    id=password    admin123
     Click Button    xpath=//button
